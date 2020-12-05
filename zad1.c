@@ -120,6 +120,7 @@ int paliwo = (rand()%2000 + 500);
 //to chyba jedyny rozsadny stan z jakiego warto startowac
 while(1){
 if(stan==PORT){
+    paliwo = TANKUJ;
     stan = PORT_ROZLADOWANIE;
     Wyslij(nr_procesu,stan, kierunek);
 }
